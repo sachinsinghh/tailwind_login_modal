@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&amp;family=Rokkitt:wght@600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme : {
+                fontFamily: {
+                    sans: ['Mullish', 'sans-serif'],
+                    mono: ['Rokkitt', 'monospace']
+                }
+            }
+        }
+    </script>
+    <title>Login Modal</title>
+</head>
+<body>
+
+<div class="flex flex-col bg-rose-50 items-center justify-center h-screen py-4 px-2 md:flex-row">
+    <div class="bg-white px-10 py-8 rounded-2xl shadow-xl flex flex-col md:flex-row">
+        <div class="flex flex-col">
+        <!--Login text / close modal icon-->
+        <div class="flex flex-row justify-between mt-10">
+                <div class="text-4xl font-bold">Log In</div>
+                
+                <div class="p-2  bg-gray-300 rounded-3xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black group-hover:text-gray-600" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+        </div>
+
+          <!--Info--> 
+        <div class="flex  flex-col mt-8">
+            <div class="text-sm  font-light text-gray-600">
+             Log in to your account to upload or download pictures, videos or music.
+            </div>
+        </div> 
+
+        <!--Input box-->
+        <div class="w-full mt-4 ">
+            <input type="text" class="focus:border-2 focus:-translate-y-1 focus:border-orange w-full text-left placehoder:text-gray-300 text-left px-4 py-4 mt-4 border-2 rounded-lg" placeholder="Enter your email address" />
+        </div>
+        <!--Forgot password/next button-->
+        <div class="flex flex-col  md:flex-row md:justify-between space-y-2 mt-4">
+            <p class="text-center font-sm text-blue-300 md:text-gray-400 py-5 md:py-10">Forgot password</p>
+            <div class="">
+            <button class="w-full text-white py-5  rounded-xl bg-cyan-700 px-4 md:px-10 text- font-normal">
+                <div><span class="inline">Next</span>
+              
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 inline" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <line x1="13" y1="18" x2="19" y2="12"></line>
+                    <line x1="13" y1="6" x2="19" y2="12"></line>
+                  </svg>
+                </div>
+            </button>
+            </div>
+        </div>
+
+        <!--Line break-->
+        <div class="border-b border-gray-400 mt-12"></div>
+
+        <!--Social login button-->
+        <div class="flex flex-row space-x-2 mx-auto">
+            <div>
+            <button class="py-4 w-full space-x-2 hover:shadow-xl hover:-translate-y-0.5 px-6 border-2 rounded-2xl mt-10"><img src="images/facebook.png" class="w-9 inline" >
+            <span>Facebook</span>
+            </button>
+           </div>
+
+           <div>
+            <button class="py-4 w-full space-x-2 hover:shadow-xl hover:-translate-y-0.5 px-6 border-2 rounded-2xl mt-10"><img src="images/google.png" class="w-9 inline" >
+            <span>Google</span>
+            </button>
+           </div>
+        </div>
+    </div>
+
+        <div class="md:block hidden relative  ml-6">
+            <img src="images/image.jpg"  class="w-[430px] h-screen" />
+            <div class="absolute top-0 right-0 p-2  bg-white mt-4 mr-4 rounded-3xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black group-hover:text-gray-600" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </div>
+        </div>
+
+    </div>
+    <!--Bigger image-->
+   
+       
+ 
+ 
+        
+    
+</div>
+    
+</body>
+</html>
